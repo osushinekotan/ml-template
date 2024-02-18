@@ -16,6 +16,8 @@ dependencies = [
     "ipykernel>=6.29.2",
     # kuma_utils is local package, replace with your own (rye add kuma_utils --path ./kuma_utils)
     "kuma_utils @ file:///Users/masato/Projects/kaggle-hydra-template/kuma_utils",
+    "kaggle>=1.6.6",
+    "transformers>=4.37.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"
@@ -59,7 +61,10 @@ ignore = [
     "D105", # undocumented-magic-method
     "D107", # undocumented-public-init
     "D205", # blank-line-after-summary
-    "D415" # ends-in-punctuation
+    "D415", # ends-in-punctuation
+    "D417",
+    "D400",
+    "D100"
 ]
 line-length = 120
 

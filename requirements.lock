@@ -40,12 +40,14 @@ babel==2.14.0
 beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.1.0
+    # via kaggle
     # via nbconvert
 catboost==1.2.2
     # via kuma-utils
 certifi==2024.2.2
     # via httpcore
     # via httpx
+    # via kaggle
     # via requests
     # via sentry-sdk
 cffi==1.16.0
@@ -85,6 +87,7 @@ fastjsonschema==2.19.1
 filelock==3.13.1
     # via huggingface-hub
     # via torch
+    # via transformers
     # via virtualenv
 fonttools==4.49.0
     # via matplotlib
@@ -109,6 +112,8 @@ httpx==0.26.0
     # via jupyterlab
 huggingface-hub==0.20.3
     # via timm
+    # via tokenizers
+    # via transformers
 hydra-colorlog==1.2.0
     # via kaggle-hydra-template
 hydra-core==1.3.2
@@ -201,6 +206,8 @@ jupyterlab-server==2.25.3
     # via notebook
 jupyterlab-widgets==3.0.10
     # via ipywidgets
+kaggle==1.6.6
+    # via kaggle-hydra-template
 kiwisolver==1.4.5
     # via matplotlib
 kuma-utils @ file:///Users/masato/Projects/kaggle-hydra-template/kuma_utils
@@ -268,6 +275,7 @@ numpy==1.26.4
     # via seaborn
     # via tensorboard
     # via torchvision
+    # via transformers
     # via xgboost
 omegaconf==2.3.0
     # via hydra-core
@@ -291,6 +299,7 @@ packaging==23.2
     # via pytest
     # via qtconsole
     # via qtpy
+    # via transformers
 pandas==2.2.0
     # via catboost
     # via seaborn
@@ -345,12 +354,15 @@ pytest==8.0.1
 python-dateutil==2.8.2
     # via arrow
     # via jupyter-client
+    # via kaggle
     # via matplotlib
     # via pandas
 python-dotenv==1.0.0
     # via rootutils
 python-json-logger==2.0.7
     # via jupyter-events
+python-slugify==8.0.4
+    # via kaggle
 pytz==2024.1
     # via pandas
 pyyaml==6.0.1
@@ -360,6 +372,7 @@ pyyaml==6.0.1
     # via optuna
     # via pre-commit
     # via timm
+    # via transformers
     # via wandb
 pyzmq==25.1.2
     # via ipykernel
@@ -375,10 +388,14 @@ referencing==0.33.0
     # via jsonschema
     # via jsonschema-specifications
     # via jupyter-events
+regex==2023.12.25
+    # via transformers
 requests==2.31.0
     # via huggingface-hub
     # via jupyterlab-server
+    # via kaggle
     # via torchvision
+    # via transformers
     # via wandb
 rfc3339-validator==0.1.4
     # via jsonschema
@@ -395,6 +412,7 @@ rpds-py==0.18.0
     # via referencing
 safetensors==0.4.2
     # via timm
+    # via transformers
 scikit-learn==1.4.1.post1
     # via kuma-utils
 scipy==1.12.0
@@ -421,6 +439,7 @@ six==1.16.0
     # via bleach
     # via catboost
     # via docker-pycreds
+    # via kaggle
     # via python-dateutil
     # via rfc3339-validator
     # via tensorboard
@@ -447,12 +466,16 @@ tensorboard-data-server==0.7.2
 terminado==0.18.0
     # via jupyter-server
     # via jupyter-server-terminals
+text-unidecode==1.3
+    # via python-slugify
 threadpoolctl==3.3.0
     # via scikit-learn
 timm==0.9.12
     # via kuma-utils
 tinycss2==1.2.1
     # via nbconvert
+tokenizers==0.15.2
+    # via transformers
 torch==2.1.2
     # via kuma-utils
     # via timm
@@ -474,7 +497,9 @@ tornado==6.4
     # via terminado
 tqdm==4.66.2
     # via huggingface-hub
+    # via kaggle
     # via optuna
+    # via transformers
 traitlets==5.14.1
     # via comm
     # via ipykernel
@@ -491,6 +516,8 @@ traitlets==5.14.1
     # via nbconvert
     # via nbformat
     # via qtconsole
+transformers==4.37.2
+    # via kaggle-hydra-template
 types-python-dateutil==2.8.19.20240106
     # via arrow
 typing-extensions==4.9.0
@@ -503,6 +530,7 @@ tzdata==2024.1
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.2.0
+    # via kaggle
     # via requests
     # via sentry-sdk
 virtualenv==20.25.0
