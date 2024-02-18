@@ -3,6 +3,9 @@
   "extensions.ignoreRecommendations": false,
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSaveMode": "file",
