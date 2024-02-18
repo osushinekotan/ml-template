@@ -19,6 +19,7 @@ def run(
     os.chdir(code)
     os.environ["PYTHONPATH"] = code
     os.environ["ENVIRONMENT"] = "kaggle"
+    os.environ["RUN_MODE"] = "inference"
 
     output_dir = f"/kaggle/input/{alias}-experiment-{experiment}"
     command = [
