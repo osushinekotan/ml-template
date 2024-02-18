@@ -1,0 +1,11 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: default
+  - hydra: default
+  - meta: default
+  - experiment: ???
+
+experiment_name: ${hydra:job.override_dirname}
+seed: 8823

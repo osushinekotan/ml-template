@@ -1,0 +1,9 @@
+# @package _global_
+
+# to execute this experiment run:
+# python run.py experiment=???
+
+notebook: _baseline # experiments/{notebook}.ipynb
+
+seed: 8823
+debug: false

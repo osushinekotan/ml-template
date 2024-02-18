@@ -1,0 +1,20 @@
+# path to root directory
+root_dir: ${oc.env:HOME}/HMS-Harmful-Brain-Activity-Classification
+
+# notebooks directory
+experiments_dir: ${paths.root_dir}/experiments
+inferences_dir: ${paths.root_dir}/inferences
+
+# data directory
+data_dir: ${paths.root_dir}/data
+
+# if local, both input and output directories are the same
+# if on kaggle, input directory is /kaggle/input and output directory is /kaggle/working
+input_dir: ${paths.data_dir}/input
+output_dir: ${paths.data_dir}/output/${hydra:job.override_dirname}
+input_read_dir: ${paths.input_read_dir}
+output_read_dir: ${paths.output_read_dir}
+input_wirte_dir: ${paths.input_read_dir}
+output_write_dir: ${paths.output_read_dir}
+
+submission_dir: ${paths.output_dir}

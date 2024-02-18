@@ -1,0 +1,3 @@
+competition_platform: kaggle # it is just memo, not used in the code
+competition_name: # The name of the competition used to download the dataset. (e.g. spaceship-titanic)
+competition_alias: ${meta.competition_name}

@@ -1,0 +1,20 @@
+# Use the following paths for inference in Kaggle code competitions:
+
+# path to root directory
+root_dir: /kaggle/working
+
+# path to resources directory
+input_dir: /kaggle/input
+output_dir: ??? # set your uploaded dataset name (...)
+input_read_dir: ${paths.input_dir}
+input_write_dir: ${paths.root_dir}
+output_read_dir: ${paths.output_dir} # has trained models in dataset, etc.
+output_write_dir: ${paths.root_dir} # has predictions, etc.
+
+# notebooks directory
+code_dir: ???
+experiments_dir: ${paths.code_dir}/experiments
+inferences_dir: ${paths.code_dir}/inferences
+
+submission_dir: ${paths.root_dir} # submission output
+
