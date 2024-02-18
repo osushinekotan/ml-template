@@ -95,7 +95,11 @@ warn_unreachable = true
 warn_unused_configs = true
 warn_unused_ignores = false
 disallow_any_generics = false
-exclude = [
-    "tests",
-    "kuma_utils"
+
+[[tool.mypy.overrides]]
+module = [
+    "kuma_utils.*",
+    "tests.*",
 ]
+ignore_errors = true
+ignore_missing_imports = true
