@@ -11,6 +11,10 @@ echo 'source "$HOME/.rye/env"' >> ~/.bashrc
 ```
 
 ```
+rye config --set-bool behavior.use-uv=true
+```
+
+```
 rye sync
 ```
 
