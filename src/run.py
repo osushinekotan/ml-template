@@ -23,7 +23,7 @@ def main(cfg: DictConfig) -> None:
     if RUN_MODE in ["experiment", "inference"]:
         raise ValueError(f"Invalid run mode: {RUN_MODE}")
 
-    exec_dir = Path(cfg.paths.inferences_dir) if RUN_MODE == "inference" else Path(cfg.paths.experiments_dir)
+    run_dir = Path(cfg.paths.inferences_dir) if RUN_MODE == "inference" else Path(cfg.paths.experiments_dir)
 
     complied_notebook_name = f"compiled_{cfg.notebook}_{RUN_MODE}.ipynb"
     if ENVIRONMENT == "kaggle":
@@ -35,7 +35,8 @@ def main(cfg: DictConfig) -> None:
     else:
         raise ValueError(f"Unknown environment: {ENVIRONMENT}")
 
-    logger.info(f"Overrides: {env['OVERRIDES']}, Notebook: {cfg.notebook}")
+    target_notebook = (run_dir / f"{cfg.notebook}.ipynb").as_posix()
+    logger.info(f"Overrides: {env['OVERRIDES']}, Notebook: {target_notebook}")
 
     command = [
         "jupyter",
@@ -47,7 +48,7 @@ def main(cfg: DictConfig) -> None:
         compiled_notebook_path.as_posix(),
         "--ExecutePreprocessor.timeout=None",
         "--ExecutePreprocessor.allow_errors=True",
-        (exec_dir / f"{cfg.notebook}.ipynb").as_posix(),
+        target_notebook,
     ]  # Unsure how to set environment variables using nbconvert.ExecutePreprocessor
 
     try:
