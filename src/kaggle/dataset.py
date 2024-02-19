@@ -29,7 +29,7 @@ def download_kaggle_competition_dataset(
     ----
         client (KaggleApi):
         competition (str):
-        out_dir (Path): distination directory
+        out_dir (Path): destination directory
         force (bool, optional): if True, overwrite existing dataset. Defaults to False.
 
     """

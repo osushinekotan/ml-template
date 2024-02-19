@@ -17,4 +17,3 @@ experiments_dir: ${paths.code_dir}/experiments
 inferences_dir: ${paths.code_dir}/inferences
 
 submission_dir: ${paths.root_dir} # submission output
-
