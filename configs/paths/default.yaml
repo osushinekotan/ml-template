@@ -1,5 +1,5 @@
 # path to root directory
-root_dir: ${oc.env:HOME}/HMS-Harmful-Brain-Activity-Classification
+root_dir: ${oc.env:HOME}/Projects/kaggle-hydra-template
 
 # notebooks directory
 experiments_dir: ${paths.root_dir}/experiments
