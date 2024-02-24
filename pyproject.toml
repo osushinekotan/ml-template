@@ -1,5 +1,5 @@
 [project]
-name = "kaggle-hydra-template"
+name = "ml-template"
 version = "0.1.0"
 description = "A template for kaggle (or other) competitions using hydra"
 authors = [
