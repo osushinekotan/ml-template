@@ -70,7 +70,6 @@ lint.ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401", "D104"]
-"kuma_utils/*" = ["D", "F403", "F405", "E722"]
 
 [tool.mypy]
 python_version = "3.11"
@@ -103,7 +102,6 @@ disallow_any_generics = false
 
 [[tool.mypy.overrides]]
 module = [
-    "kuma_utils.*",
     "tests.*",
 ]
 ignore_errors = true
