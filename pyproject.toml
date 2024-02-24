@@ -14,8 +14,6 @@ dependencies = [
     "rich>=13.7.0",
     "notebook>=7.1.0",
     "ipykernel>=6.29.2",
-    # kuma_utils is local package, replace with your own (rye add kuma_utils --path ./kuma_utils)
-    "kuma_utils @ file:///Users/masato/Projects/kaggle-hydra-template/kuma_utils",
     "kaggle>=1.6.6",
     "transformers>=4.37.2",
 ]
