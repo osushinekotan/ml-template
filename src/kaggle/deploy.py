@@ -9,7 +9,7 @@ from kaggle import KaggleApi
 from src.kaggle.datasets import Deploy
 
 
-@hydra.main(config_path="../configs", config_name="config")
+@hydra.main(config_path="../../configs", config_name="config")
 def main(cfg: DictConfig) -> None:
     """Push experiment outputs to kaggle dataset."""
     client = KaggleApi()
