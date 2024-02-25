@@ -16,6 +16,13 @@ dependencies = [
     "ipykernel>=6.29.2",
     "kaggle>=1.6.6",
     "transformers>=4.37.2",
+    "catboost>=1.2.3",
+    "lightgbm>=4.3.0",
+    "numpy>=1.26.4",
+    "pandas>=2.2.1",
+    "polars>=0.20.10",
+    "xgboost>=2.0.3",
+    "scikit-learn>=1.4.1.post1",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"
