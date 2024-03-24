@@ -3,13 +3,6 @@
   "extensions.ignoreRecommendations": false,
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
-  "notebook.codeActionsOnSave": {
-    "source.fixAll.ruff": true,
-    "source.organizeImports.ruff": true
-  },
-  "python.analysis.diagnosticSeverityOverrides": {
-    "reportMissingImports": "none"
-  },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSaveMode": "file",
@@ -19,21 +12,9 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
-  "[json][jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit"
-    }
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit"
-    }
-  },
   "[json][jsonc][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
     }
