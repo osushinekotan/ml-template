@@ -1,5 +1,5 @@
 # path to root directory
-root_dir: ${oc.env:HOME}/Projects/kaggle-hydra-template
+root_dir: .
 
 # notebooks directory
 experiments_dir: ${paths.root_dir}/experiments
